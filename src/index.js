@@ -10,6 +10,11 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 const { connectDB } = require('./db/connect');
 const app = express();
 
+const cors=require('cors')
+app.use(cors({
+    origin: "*"
+}))
+
 // standard middleware
 app.use(express.json()); // to get json data from req.body
 app.use(express.urlencoded());
