@@ -1,5 +1,5 @@
 const notFound = (req, res) => {
-    res.status(404).send('Route Does Not Exist');
+    res.status(404).send('Server Running from Heroku, Looking for API requests');
 };
 
 module.exports = notFound;
