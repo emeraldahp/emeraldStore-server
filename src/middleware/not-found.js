@@ -1,5 +1,5 @@
 const notFound = (req, res) => {
-    res.status(404).send('Server Running from Heroku, Looking for API requests');
+    res.status(404).send('Server Running from railway.app, Looking for API requests');
 };
 
 module.exports = notFound;
